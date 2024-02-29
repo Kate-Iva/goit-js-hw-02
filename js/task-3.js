@@ -1,7 +1,7 @@
 'use strict';
 function checkForSpam(message) {
-const checkMessage = message.toLowerCase();
-return checkMessage.includes('spam') || checkMessage.toLowerCase().includes('sale');
+const normalizedMessage = message.toLowerCase();
+return normalizedMessage.includes('spam') || normalizedMessage.includes('sale');
 
 }
 
